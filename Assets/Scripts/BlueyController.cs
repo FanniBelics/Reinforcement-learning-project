@@ -22,6 +22,15 @@ public class BlueyController : Agent
 
     public override void OnEpisodeBegin()
     {
+        GameObject[] existingBalloons = GameObject.FindGameObjectsWithTag("Balloon");
+        if(existingBalloons.Length > 0 )
+        {
+            foreach( GameObject balloon in existingBalloons)
+            {
+                Destroy(balloon);
+            }
+        }
+
         Debug.Log("Episode begins");
         float xPosition = UnityEngine.Random.RandomRange(-3, 11);
         float zPosition = UnityEngine.Random.RandomRange(-7, 10);
@@ -63,7 +72,7 @@ public class BlueyController : Agent
         transform.Translate(Vector3.forward * speed * Time.fixedDeltaTime * actionDirection);
         transform.rotation = Quaternion.Euler(new Vector3(0, actionSteering * 180, 0));
 
-        AddReward((actionDirection + actionSteering) * 0.01f);
+        AddReward((actionDirection + actionSteering));
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -82,10 +91,13 @@ public class BlueyController : Agent
             actions[0] = -1;
         }
         if (Input.GetKey("d"))
-            actions[1] = +0.5f;
+            actions[1] = 0.10f;
 
-        if (Input.GetKey("a"))
-            actions[1] = -0.5f;
+        else if (Input.GetKey("a"))
+            actions[1] = -0.10f;
+
+        Debug.Log("Forward/Backward Action: " + actions[0]);
+        Debug.Log("Turn Action: " + actions[1]);
     }
   
 
@@ -95,6 +107,7 @@ public class BlueyController : Agent
         Destroy(newBalloon);
         EndEpisode();
     }
+
 
     void OnCollisionEnter(Collision collision)
     {
@@ -107,7 +120,7 @@ public class BlueyController : Agent
         }
 
         if (collision.gameObject.CompareTag("Balloon")){
-            AddReward(1);
+            AddReward(0.5f);
         }
     }
 
