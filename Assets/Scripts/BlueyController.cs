@@ -9,10 +9,10 @@ using UnityEngine;
 public class BlueyController : Agent
 {
     public float speed = 5;
-    public GameObject balloonPrefab;
-    private Vector3 startingPosition = new Vector3(0.0f, 1.5f, -8.0f);
+    private Vector3 startingPosition = new Vector3(0.0f, 1.5f, 0.0f);
     public Rigidbody rb;
-    private GameObject newBalloon;
+    public Transform Balloon;
+    private static BlueyController instance;
 
     // Start is called before the first frame update
     void Start()
@@ -22,21 +22,26 @@ public class BlueyController : Agent
 
     public override void OnEpisodeBegin()
     {
-        GameObject[] existingBalloons = GameObject.FindGameObjectsWithTag("Balloon");
-        if(existingBalloons.Length > 0 )
-        {
-            foreach( GameObject balloon in existingBalloons)
-            {
-                Destroy(balloon);
-            }
-        }
+
+        transform.localPosition = new Vector3(0, 0.5f, 0);
 
         Debug.Log("Episode begins");
-        float xPosition = UnityEngine.Random.RandomRange(-3, 11);
-        float zPosition = UnityEngine.Random.RandomRange(-7, 10);
+        float xPosition = UnityEngine.Random.RandomRange(-1, 3);
+        float zPosition = UnityEngine.Random.RandomRange(-1, 3);
 
-        newBalloon = Instantiate(balloonPrefab, new Vector3(xPosition, 10, zPosition), Quaternion.identity);
-        transform.localPosition = startingPosition;
+
+        Vector3 position = new Vector3 (xPosition, 10, zPosition);
+
+        Balloon.localPosition = transform.localPosition + position;
+
+        Rigidbody balloonRigidbody = Balloon.GetComponent<Rigidbody>();
+
+        if (balloonRigidbody != null)
+        {
+            balloonRigidbody.velocity = Vector3.zero;
+            balloonRigidbody.angularVelocity = Vector3.zero;
+        }
+
     }
 
     // Update is called once per frame
@@ -72,7 +77,7 @@ public class BlueyController : Agent
         transform.Translate(Vector3.forward * speed * Time.fixedDeltaTime * actionDirection);
         transform.rotation = Quaternion.Euler(new Vector3(0, actionSteering * 180, 0));
 
-        AddReward((actionDirection + actionSteering));
+        AddReward((actionDirection + actionSteering)*0.01f);
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -101,12 +106,16 @@ public class BlueyController : Agent
     }
   
 
-    public void EndThisEpisode()
+   /*public void EndThisEpisode()
     {
         AddReward(-10);
-        Destroy(newBalloon);
         EndEpisode();
     }
+
+    public void CollidedWithObsticle()
+    {
+        AddReward(-3);
+    }*/
 
 
     void OnCollisionEnter(Collision collision)
@@ -120,7 +129,7 @@ public class BlueyController : Agent
         }
 
         if (collision.gameObject.CompareTag("Balloon")){
-            AddReward(0.5f);
+            AddReward(2.0f);
         }
     }
 

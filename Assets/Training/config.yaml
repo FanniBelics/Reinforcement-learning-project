@@ -2,7 +2,7 @@ behaviors:
   BlueyBehaviour:
     trainer_type: ppo
     time_horizon: 32 # Typical range: 32 - 2048
-    max_steps: 1e6 # Typical range: 5e5 - 1e7
+    max_steps: 1e5 # Typical range: 5e5 - 1e7
     hyperparameters:
       learning_rate: 1e-4 # Typical range: 1e-5 - 1e-3
       batch_size: 2048 # Typical range: (Continuous - PPO): 512 - 5120; (Continuous - SAC): 128 - 1024; (Discrete, PPO & SAC): 32 - 512.
@@ -16,7 +16,7 @@ behaviors:
       extrinsic:
         gamma: 0.9
         strength: 1.0
-    summary_freq: 50000
+    summary_freq: 10000
     threaded: false
 torch_settings:
   device: cuda

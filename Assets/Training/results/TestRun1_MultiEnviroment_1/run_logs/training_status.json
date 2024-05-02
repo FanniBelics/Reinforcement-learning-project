@@ -1,0 +1,29 @@
+{
+    "BlueyBehaviour": {
+        "checkpoints": [
+            {
+                "steps": 100016,
+                "file_path": "results\\TestRun1_MultiEnviroment_1\\BlueyBehaviour\\BlueyBehaviour-100016.onnx",
+                "reward": -10.439077361343193,
+                "creation_time": 1714656834.9672458,
+                "auxillary_file_paths": [
+                    "results\\TestRun1_MultiEnviroment_1\\BlueyBehaviour\\BlueyBehaviour-100016.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 100016,
+            "file_path": "results\\TestRun1_MultiEnviroment_1\\BlueyBehaviour.onnx",
+            "reward": -10.439077361343193,
+            "creation_time": 1714656834.9672458,
+            "auxillary_file_paths": [
+                "results\\TestRun1_MultiEnviroment_1\\BlueyBehaviour\\BlueyBehaviour-100016.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

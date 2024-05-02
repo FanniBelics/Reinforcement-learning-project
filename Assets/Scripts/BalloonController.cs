@@ -10,6 +10,7 @@ using static BlueyController;
 
 public class BalloonController : MonoBehaviour
 {
+    public BlueyController blueyController;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,11 +28,13 @@ public class BalloonController : MonoBehaviour
         if(collision.collider.tag == "Obsticle")
         {
             Debug.Log(collision.gameObject.name + " Collided!");
+            blueyController.AddReward(-3);
         }
         if(collision.collider.tag == "Floor")
         {
             Debug.Log("Floor collided");
-            FindObjectOfType<BlueyController>().EndThisEpisode();
+            blueyController.AddReward(-10);
+            blueyController.EndEpisode(); 
         }
     }
 }
