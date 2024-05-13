@@ -28,12 +28,12 @@ public class BalloonController : MonoBehaviour
         if(collision.collider.tag == "Obsticle")
         {
             Debug.Log(collision.gameObject.name + " Collided!");
-            blueyController.AddReward(-3);
+            //blueyController.AddReward(-3);
         }
         if(collision.collider.tag == "Floor")
         {
             Debug.Log("Floor collided");
-            blueyController.AddReward(-10);
+            blueyController.AddReward(-2);
             blueyController.EndEpisode(); 
         }
     }

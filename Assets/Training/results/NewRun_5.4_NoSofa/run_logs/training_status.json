@@ -1,0 +1,29 @@
+{
+    "BlueyBehaviour": {
+        "checkpoints": [
+            {
+                "steps": 240791,
+                "file_path": "results\\NewRun_5.4_NoSofa\\BlueyBehaviour\\BlueyBehaviour-240791.onnx",
+                "reward": -0.10750018358230591,
+                "creation_time": 1715020923.0266056,
+                "auxillary_file_paths": [
+                    "results\\NewRun_5.4_NoSofa\\BlueyBehaviour\\BlueyBehaviour-240791.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 240791,
+            "file_path": "results\\NewRun_5.4_NoSofa\\BlueyBehaviour.onnx",
+            "reward": -0.10750018358230591,
+            "creation_time": 1715020923.0266056,
+            "auxillary_file_paths": [
+                "results\\NewRun_5.4_NoSofa\\BlueyBehaviour\\BlueyBehaviour-240791.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

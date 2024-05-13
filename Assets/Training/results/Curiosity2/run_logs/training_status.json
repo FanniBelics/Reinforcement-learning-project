@@ -1,0 +1,29 @@
+{
+    "BlueyBehaviour": {
+        "checkpoints": [
+            {
+                "steps": 277263,
+                "file_path": "results\\Curiosity2\\BlueyBehaviour\\BlueyBehaviour-277263.onnx",
+                "reward": null,
+                "creation_time": 1715551966.793894,
+                "auxillary_file_paths": [
+                    "results\\Curiosity2\\BlueyBehaviour\\BlueyBehaviour-277263.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 277263,
+            "file_path": "results\\Curiosity2\\BlueyBehaviour.onnx",
+            "reward": null,
+            "creation_time": 1715551966.793894,
+            "auxillary_file_paths": [
+                "results\\Curiosity2\\BlueyBehaviour\\BlueyBehaviour-277263.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

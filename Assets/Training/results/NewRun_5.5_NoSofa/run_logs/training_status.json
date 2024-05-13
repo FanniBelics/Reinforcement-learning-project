@@ -1,0 +1,56 @@
+{
+    "BlueyBehaviour": {
+        "checkpoints": [
+            {
+                "steps": 499995,
+                "file_path": "results\\NewRun_5.5_NoSofa\\BlueyBehaviour\\BlueyBehaviour-499995.onnx",
+                "reward": 19.57164101097241,
+                "creation_time": 1715022088.2674036,
+                "auxillary_file_paths": [
+                    "results\\NewRun_5.5_NoSofa\\BlueyBehaviour\\BlueyBehaviour-499995.pt"
+                ]
+            },
+            {
+                "steps": 999970,
+                "file_path": "results\\NewRun_5.5_NoSofa\\BlueyBehaviour\\BlueyBehaviour-999970.onnx",
+                "reward": 23.030513110406257,
+                "creation_time": 1715023259.0287101,
+                "auxillary_file_paths": [
+                    "results\\NewRun_5.5_NoSofa\\BlueyBehaviour\\BlueyBehaviour-999970.pt"
+                ]
+            },
+            {
+                "steps": 1499984,
+                "file_path": "results\\NewRun_5.5_NoSofa\\BlueyBehaviour\\BlueyBehaviour-1499984.onnx",
+                "reward": 24.023704450886424,
+                "creation_time": 1715024372.946672,
+                "auxillary_file_paths": [
+                    "results\\NewRun_5.5_NoSofa\\BlueyBehaviour\\BlueyBehaviour-1499984.pt"
+                ]
+            },
+            {
+                "steps": 1682754,
+                "file_path": "results\\NewRun_5.5_NoSofa\\BlueyBehaviour\\BlueyBehaviour-1682754.onnx",
+                "reward": 23.399228666937073,
+                "creation_time": 1715024773.9695172,
+                "auxillary_file_paths": [
+                    "results\\NewRun_5.5_NoSofa\\BlueyBehaviour\\BlueyBehaviour-1682754.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1682754,
+            "file_path": "results\\NewRun_5.5_NoSofa\\BlueyBehaviour.onnx",
+            "reward": 23.399228666937073,
+            "creation_time": 1715024773.9695172,
+            "auxillary_file_paths": [
+                "results\\NewRun_5.5_NoSofa\\BlueyBehaviour\\BlueyBehaviour-1682754.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

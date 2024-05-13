@@ -1,0 +1,65 @@
+{
+    "BlueyBehaviour": {
+        "checkpoints": [
+            {
+                "steps": 2999984,
+                "file_path": "results\\NoFurnitureRun4_MoreRealisticBalloon2\\BlueyBehaviour\\BlueyBehaviour-2999984.onnx",
+                "reward": 51.32344771056196,
+                "creation_time": 1715390861.6065974,
+                "auxillary_file_paths": [
+                    "results\\NoFurnitureRun4_MoreRealisticBalloon2\\BlueyBehaviour\\BlueyBehaviour-2999984.pt"
+                ]
+            },
+            {
+                "steps": 3499972,
+                "file_path": "results\\NoFurnitureRun4_MoreRealisticBalloon2\\BlueyBehaviour\\BlueyBehaviour-3499972.onnx",
+                "reward": 54.14636123541629,
+                "creation_time": 1715392026.320053,
+                "auxillary_file_paths": [
+                    "results\\NoFurnitureRun4_MoreRealisticBalloon2\\BlueyBehaviour\\BlueyBehaviour-3499972.pt"
+                ]
+            },
+            {
+                "steps": 3999974,
+                "file_path": "results\\NoFurnitureRun4_MoreRealisticBalloon2\\BlueyBehaviour\\BlueyBehaviour-3999974.onnx",
+                "reward": 50.02692641463934,
+                "creation_time": 1715393177.560403,
+                "auxillary_file_paths": [
+                    "results\\NoFurnitureRun4_MoreRealisticBalloon2\\BlueyBehaviour\\BlueyBehaviour-3999974.pt"
+                ]
+            },
+            {
+                "steps": 4499992,
+                "file_path": "results\\NoFurnitureRun4_MoreRealisticBalloon2\\BlueyBehaviour\\BlueyBehaviour-4499992.onnx",
+                "reward": 58.486816095583364,
+                "creation_time": 1715394328.6084557,
+                "auxillary_file_paths": [
+                    "results\\NoFurnitureRun4_MoreRealisticBalloon2\\BlueyBehaviour\\BlueyBehaviour-4499992.pt"
+                ]
+            },
+            {
+                "steps": 4851272,
+                "file_path": "results\\NoFurnitureRun4_MoreRealisticBalloon2\\BlueyBehaviour\\BlueyBehaviour-4851272.onnx",
+                "reward": 59.068872287573406,
+                "creation_time": 1715395150.9177477,
+                "auxillary_file_paths": [
+                    "results\\NoFurnitureRun4_MoreRealisticBalloon2\\BlueyBehaviour\\BlueyBehaviour-4851272.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 4851272,
+            "file_path": "results\\NoFurnitureRun4_MoreRealisticBalloon2\\BlueyBehaviour.onnx",
+            "reward": 59.068872287573406,
+            "creation_time": 1715395150.9177477,
+            "auxillary_file_paths": [
+                "results\\NoFurnitureRun4_MoreRealisticBalloon2\\BlueyBehaviour\\BlueyBehaviour-4851272.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

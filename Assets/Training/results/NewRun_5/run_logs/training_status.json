@@ -1,0 +1,47 @@
+{
+    "BlueyBehaviour": {
+        "checkpoints": [
+            {
+                "steps": 499984,
+                "file_path": "results\\NewRun_5\\BlueyBehaviour\\BlueyBehaviour-499984.onnx",
+                "reward": 18.113607030383424,
+                "creation_time": 1715012578.689579,
+                "auxillary_file_paths": [
+                    "results\\NewRun_5\\BlueyBehaviour\\BlueyBehaviour-499984.pt"
+                ]
+            },
+            {
+                "steps": 999999,
+                "file_path": "results\\NewRun_5\\BlueyBehaviour\\BlueyBehaviour-999999.onnx",
+                "reward": 21.957954679017863,
+                "creation_time": 1715013711.6186824,
+                "auxillary_file_paths": [
+                    "results\\NewRun_5\\BlueyBehaviour\\BlueyBehaviour-999999.pt"
+                ]
+            },
+            {
+                "steps": 1483742,
+                "file_path": "results\\NewRun_5\\BlueyBehaviour\\BlueyBehaviour-1483742.onnx",
+                "reward": null,
+                "creation_time": 1715014811.6222117,
+                "auxillary_file_paths": [
+                    "results\\NewRun_5\\BlueyBehaviour\\BlueyBehaviour-1483742.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1483742,
+            "file_path": "results\\NewRun_5\\BlueyBehaviour.onnx",
+            "reward": null,
+            "creation_time": 1715014811.6222117,
+            "auxillary_file_paths": [
+                "results\\NewRun_5\\BlueyBehaviour\\BlueyBehaviour-1483742.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
